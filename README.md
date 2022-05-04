@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+#  Beacon Wallet App on React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Most important is, to understand why some crypto-related libraries can't work right away on React/ReactNative or any JS Framework.
+
+- Reason : *the different host environment between NodeJS and our browser cause libraries to panic because they can't find node libs on our browser.*
+
+- Fixes : there are many ways, but here I use `react-app-rewired` and dozen of `-browserify` libraries to re-route the link to js libs, through a config file at root folder, you can guess.
+
+- React Native : it may just use `rn-nodeify` to work fine. 
 
 ## Available Scripts
 
